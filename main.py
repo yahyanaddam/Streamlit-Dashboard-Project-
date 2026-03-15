@@ -1,7 +1,7 @@
 import pandas as pd
 import streamlit as st
 
-data = pd.read_excel("Analytics 2025.xlsx", sheet_name=None)
+data = pd.read_excel("Analytics_2025.xlsx", sheet_name=None)
 youtube = data["You Tube"]#  Views, Subscribers, Impressions, Likes, Unique Viewers. 
 instagram = data["Instagram"] # Views, Followers, Interactions, Likes, Unique Viewers.
 tiktok = data["TikTok"]# Views, Followers, Impressions, Likes, Unique Viewers.
