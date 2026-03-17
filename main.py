@@ -7,6 +7,11 @@ instagram = data["Instagram"] # Views, Followers, Interactions, Likes, Unique Vi
 tiktok = data["TikTok"]# Views, Followers, Impressions, Likes, Unique Viewers.
 facebook = data["Facebook"]# Views, Followers, Interactions, Likes, Unique Viewers.
 
+
+# Title & Col1/Col2
+st.title("Social Media Growth Dashboard")
+col1, col2 = st.columns(2)
+
 # Options Menu 
 platform_choice = st.multiselect("Platform:",["All","Youtube", "Instagram", "TikTok", "Facebook"], default=["All"])
 analysis_col = st.multiselect("Metric",["All",
@@ -15,10 +20,6 @@ analysis_col = st.multiselect("Metric",["All",
                                          "Impressions/Interactions",
                                          "Likes",
                                          "Unique Viewers"], default=["All"])
-
-# Title & Col1/Col2
-st.title("Social Media Growth Dashboard")
-col1, col2 = st.columns(2)
 
 # Youtube
 if "Youtube" in platform_choice or "All" in platform_choice : 
